@@ -11,7 +11,7 @@ const app = express();
 // app.use(cors());
 
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://664f60bfe1c4d913e9eea105--resonant-dasik-f304a9.netlify.app');
+  res.setHeader('Access-Control-Allow-Origin', 'https://664f6363e9e9141774111479--zesty-brigadeiros-212bc4.netlify.app');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   res.setHeader('Access-Control-Allow-Credentials', true);
