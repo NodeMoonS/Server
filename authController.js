@@ -70,9 +70,7 @@ class authController {
 
       res.send(data)
     } catch (e) {
-      return res.status(401).send({
-        message: 'unauthenticated'
-      })
+      console.log('err', e)
     }
   }
   async logout(req, res) {
