@@ -40,9 +40,9 @@ class authController {
       const token = jwt.sign({ _id: user._id }, process.env.SECRET_KEY)
 
       res.cookie('jwt', token, {
-        secure: false,
+        maxAge: 1000 * 60 * 60 * 24 * 7,
         httpOnly: true,
-        maxAge: 168 * 60 * 60 * 1000 // 1 weak
+        sameSite: true
       })
 
       return res.json({ token })
@@ -55,6 +55,11 @@ class authController {
   async getUser(req, res) {
     try {
       const cookie = req.cookies['jwt']
+      if (!cookie) {
+        return res.status(401).send({
+          message: 'unauthenticated user no cookie'
+        });
+      }
 
       const claims = jwt.verify(cookie, process.env.SECRET_KEY)
 
