@@ -11,7 +11,7 @@ const app = express();
 // app.use(cors());
 https://zesty-brigadeiros-212bc4.netlify.app/
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://66504463d2814c02791047d5--incomparable-gaufre-fb9371.netlify.app');
+  res.setHeader('Access-Control-Allow-Origin', 'https://66504463d2814c02791047d5--incomparable-gaufre-fb9371.netlify.app', 'http://127.0.0.1:5500');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   res.setHeader('Access-Control-Allow-Credentials', true);
