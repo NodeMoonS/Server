@@ -1,4 +1,6 @@
 const nodemailer = require('nodemailer');
+
+//Логика отправки письма на почту
 class sendController {
   async contactForm(req, res) {
     const transporter = nodemailer.createTransport({
