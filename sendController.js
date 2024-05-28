@@ -19,8 +19,8 @@ class sendController {
     const { email, name, surname, patronomic, goodOne, goodTwo, goodThree, goodFour, goodFive, goodSix, goodSeven, goodEight, goodNine, goodTen, goodEleven, goodTwelve, goodThirteen, goodFourteen, goodFifteen, goodSixteen, goodSeventeen, goodEighteen, goodNineteen, goodTwenty } = req.body
 
     const mailOptions = {
-      from: "ооо 'АлекСофт' <sergei.alfiorov.99@mail.ru>",
-      to: "sergei.alfiorov.99@mail.ru",
+      from: "ооо 'АлекСофт' <elena-ivanova-1757@mail.ru>",
+      to: "elena-ivanova-1757@mail.ru",
       subject: "заказ",
       text: `Имя: ${name}\nФамилия: ${surname}\nОтчество: ${patronomic}\nEmail: ${email} \nЗаказ: ${goodOne}, ${goodTwo}, ${goodThree}, ${goodFour}, ${goodFive}, ${goodSix}, ${goodSeven}, ${goodEight}, ${goodNine}, ${goodTen}, ${goodEleven}, ${goodTwelve}, ${goodThirteen}, ${goodFourteen}, ${goodFifteen}, ${goodSixteen}, ${goodSeventeen}, ${goodEighteen}, ${goodNineteen}, ${goodTwenty} \nСтатус: заказ оформлен`
     };
